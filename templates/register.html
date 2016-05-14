@@ -1,16 +1,9 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Thankr</title>
-    </head>
-
-    <body>
-        <h1>Registr with Thankr</h1>
-
-        {% if registered %}
+{% extends "base.html" %}
+{% block content %}
+    {% if registered %}
         Thankr says: <strong>thank you for registering!</strong>
         <a href="/">Return to the homepage.</a><br />
-        {% else %}
+    {% else %}
         Thankr says: <strong>register here!</strong><br />
 
         <form id="user_form" method="post" action="/register/"
@@ -26,6 +19,5 @@
             <!-- Provide a button to click to submit the form. -->
             <input type="submit" name="submit" value="Register" />
         </form>
-        {% endif %}
-    </body>
-</html>
+    {% endif %}
+{% endblock %}

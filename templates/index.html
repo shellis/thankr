@@ -1,15 +1,11 @@
-<html>
-
-<body>
-{% if user.is_authenticated %}
-<h1>Welcome back {{ user.username }}, from Thankr!</h1>
-<a href="/logout/">Logout</a><br />
-{% else %}
-<h1>Hello unknown stranger!</h1>
-<a href="/register/">Register Here</a>
-<a href="/login/">Login</a>
-{% endif %}
-
-
-</body>
-</html>
+{% extends "base.html" %}
+{% block content %}
+	{% if user.is_authenticated %}
+		<h1>Welcome back {{ user.username }}, from Thankr!</h1>
+		<a href="/logout/">Logout</a><br />
+	{% else %}
+		<h1>Hello unknown stranger!</h1>
+		<a href="/register/">Register Here</a>
+		<a href="/login/">Login</a>
+	{% endif %}
+{% endblock %}
