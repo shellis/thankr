@@ -1,5 +1,11 @@
 <html>
-<body>Hello from Thankr
+<body>
+{% if user.is_authenticated %}
+<h1>Welcome back {{ user.username }}, from Thankr!</h1>
+{% else %}
+<h1>Hello unknown stranger!</h1>
+{% endif %}
+
 <a href="/register/">Register Here</a>
 <a href="/login/">Login</a>
 </body>
