@@ -7,7 +7,6 @@ from django.http import HttpResponseRedirect
 
 from thankr.moments.resources.serializers import MomentSerializer
 from thankr.moments.models import Moment
-from thankr.moments.forms import MomentForm
 
 class MomentDetail(APIView):
 	permission_classes = (permissions.IsAuthenticated,)
