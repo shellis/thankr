@@ -1,22 +1,27 @@
 {% load staticfiles %}
 
 <html>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.26.3/css/uikit.almost-flat.min.css" />
+  <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.26.3/css/uikit.almost-flat.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.26.3/js/uikit.min.js"></script>
   <link rel="stylesheet" type="text/css" href="{% static 'base.css' %}">
-  <head>
-    {% block head %}<h1>Thankr</h1>{% endblock head %}
-  </head>
+
+  <header>
+      {% block head %}<h1>Thankr</h1>{% endblock head %}
+  </header>
+
   <body>
+
   <div class = "nav">
       {% block nav %}
            {% include 'nav_list.html' %}
     {% endblock %}
-  </div>
+    </div>
 
+      <div class="content-wrapper uk-container uk-container-center">
     {% block content %}{% endblock content %}
-
+    </div>
 
   </body>
 </html>

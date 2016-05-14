@@ -1,3 +1,21 @@
+body {
+	margin: 0;
+	font-family: Lato, Roboto;
+}
+
+header {
+	padding: 10px;
+	background-color: #00E4BA;
+	color: #fff;
+}
+header h1 {
+	color: #fff;
+}
+
 h1 {
-	color: red;
+	margin: 10px;
+}
+
+.content-wrapper {
+	margin-top: 50px;
 }

@@ -6,8 +6,7 @@
     {% else %}
         Thankr says: <strong>register here!</strong><br />
 
-        <form id="user_form" method="post" action="/register/"
-                enctype="multipart/form-data">
+        <form id="user_form" class="uk-form" method="post" action="/register/" enctype="multipart/form-data">
 
             {% csrf_token %}
 
