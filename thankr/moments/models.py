@@ -9,6 +9,7 @@ class Moment(TimeStampedModel):
     class Meta:
         db_table = 'moments'
     id = models.AutoField(primary_key=True)
+    date = models.DateField()
     user = models.ForeignKey(User, db_column="user_id", null=False)
     title = models.CharField(max_length=1024, null=False)
     text = models.TextField(null=False)

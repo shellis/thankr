@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Thankr</title>
+    </head>
+    <body>
+    	<table>
+    		{% if moments %}
+		    	{% for moment in moments %}
+		    		<tr>  
+		    			<td>{{ moment.date }} </td>
+		    			<td>{{ moment.title }} </td>
+		    			<td>{{ moment.text }} </td>
+		    		</tr>
+		    	{% endfor %}
+	    	{% else %}
+	    	<tr><td> Sorry no moments!</td></tr>
+	    	{% endif %}
+    	</table>
+    </body>
+
+</html>
