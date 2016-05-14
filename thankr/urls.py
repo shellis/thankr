@@ -23,6 +23,6 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^login/', "thankr.accounts.views.user_login", name='login'),
     url(r'^register/', "thankr.accounts.views.register"),
-    url(r'^', TemplateView.as_view(template_name='index.html')),
     url(r'^moments/', include('thankr.moments.urls')),
+    url(r'^', TemplateView.as_view(template_name='index.html')),
 ]
