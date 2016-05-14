@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+{% load rest_framework %}
+
+<html>
+  <head>
+      <title>Thankr</title>
+  </head>
+  <body>
+    <h1>Add a moment that made your day!</h1>
+    <form id="moment_form" method="post" action="/moments/add/" enctype="multipart/form-data">
+    {% csrf_token %}
+    {% render_form serializer %}
+    <input type="submit" value="Save">
+    </form>
+  </body>
+</html>
+{% endblock %}
