@@ -3,6 +3,7 @@
 	{% if user.is_authenticated %}
 		<h1>Welcome back {{ user.username }}, from Thankr!</h1>
 	{% else %}
-		<h1>Hello unknown stranger!</h1>
+		<h1>Sign up to see your moments</h1>
+		{% include "register.html" %}
 	{% endif %}
 {% endblock %}
