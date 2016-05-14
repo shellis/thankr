@@ -6,7 +6,10 @@
 <h1>Hello unknown stranger!</h1>
 {% endif %}
 
+{% if not user.is_authenticated %}
 <a href="/register/">Register Here</a>
 <a href="/login/">Login</a>
+{% endif %}
+
 </body>
 </html>
