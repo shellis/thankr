@@ -9,6 +9,14 @@
     {% block head %}<h1>Thankr</h1>{% endblock head %}
   </head>
   <body>
+  <div class = "nav">
+      {% block nav %}
+           {% include 'nav_list.html' %}
+    {% endblock %}
+  </div>
+
     {% block content %}{% endblock content %}
+
+
   </body>
 </html>
