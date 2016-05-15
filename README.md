@@ -2,7 +2,7 @@
 
 ## What is Thankr?
 
-Thankr is a smart webapp to help you become happier! It lets you add simple moments that you're grateful for. From that, it uses a text mining based on common natural language processing (NLP) to analyze your entries by looking things like the nouns used, sentiments and word freqency. By auto classifying your entry under different 'categories', it identifies top categories that make you happy and gives you a smart suggestion for an activity you can try today. Thankr has potential to become smarter as you feed more entries and train the system. 
+Thankr is a smart webapp to help you become happier! It lets you add simple moments that you're grateful for. From that, it uses a text mining framework called TextBlob based on common natural language processing (NLP) to analyze your entries by looking things like the nouns used, sentiments and word freqency. By auto classifying your entry under different 'categories', it identifies top categories that make you happy and gives you a smart suggestion for an activity you can try today. Thankr has potential to become smarter as you feed more entries and train the system. 
 
 We hacked this in 12 hours for the 'Powerful Women in Tech Presents: Hack for the World Hackathon' at the Facebook Headquarters. :)
 
@@ -11,7 +11,7 @@ We hacked this in 12 hours for the 'Powerful Women in Tech Presents: Hack for th
 - logging in/logging out
 - Adding moment entries (date, title, simple text and rating)
 - Viewing all moments
-- Auto categorizing your entry through text mining
+- Auto categorizing your entry through text processing
 - Smart suggestion based on your top category
 
 ## Screenshots
