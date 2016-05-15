@@ -26,5 +26,6 @@
     {"text": "I completed a marathon!", "label": "fitness"},
     {"text": "I walked 5000 steps.", "label": "fitness"},
     {"text": "I ran for 30 minutes.", "label": "fitness"},
-    {"text": "I lifted a lot of weight today!", "label": "fitness"}
+    {"text": "I lifted a lot of weight today!", "label": "fitness"},
+    {"text": "I scored!", "label": "fitness"}
 ]
