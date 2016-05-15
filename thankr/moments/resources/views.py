@@ -33,7 +33,7 @@ class MomentDetail(APIView):
 			suggested_category_id = cat_db.id
 		except ObjectDoesNotExist:
 			suggested_category_id = None
-		serializer.save(user_id=request.user.id, suggested_category_id=suggested_category_id)
+		serializer.save(user_id=request.user.id, category_id=suggested_category_id)
 		return HttpResponseRedirect('/moments/')
 
 class MomentList(APIView):

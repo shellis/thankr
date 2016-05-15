@@ -6,8 +6,11 @@ class CategoryField(serializers.PrimaryKeyRelatedField):
         return instance.name
 
 class MomentSerializer(serializers.ModelSerializer):
-    category = CategoryField(queryset=Category.objects.all())
+    category_name = serializers.SerializerMethodField()
     class Meta:
         model = Moment
-        fields = ('id', 'date', 'title', 'text', 'category', 'rating')
-        read_only_fields = ('id', 'suggested_category')
+        fields = ('id', 'date', 'title', 'text', 'rating', 'category_name')
+        read_only_fields = ('id',)
+
+    def get_category_name(self, obj):
+        return obj.category.name

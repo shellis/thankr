@@ -12,6 +12,8 @@
         			<th>Date</th>
         			<th>Title</th>
         			<th>Text</th>
+                    <th>Rating</th>
+                    <th>Category</th>
         		</tr>
         		{% if moments %}
     		    	{% for moment in moments %}
@@ -19,6 +21,8 @@
     		    			<td>{{ moment.date }} </td>
     		    			<td>{{ moment.title }} </td>
     		    			<td class='moment-text'>{{ moment.text }} </td>
+                            <td>{{ moment.rating }} </td>
+                            <td>{{ moment.category_name }} </td>
     		    		</tr>
     		    	{% endfor %}
     	    	{% else %}
