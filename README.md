@@ -12,6 +12,19 @@ Thankr is a smart webapp to help you become happier! It lets you add simple mome
 - Auto categorizing your entry by text mining
 - Smart suggestion based on your top category
 
+## Screenshots
+
+1. Home page
+![Alt text](/screenshots/Home.png?raw=true "Home" =250x)
+
+2. Add a simple moment
+![Alt text](/screenshots/AddMoment.png?raw=true "Add Moment")
+
+3. Thankr will auto categorize your moment!
+
+4. Get a suggestion on what will make you happy! It knows food makes you happy.
+![Alt text](/screenshots/Suggestion.png?raw=true "Suggestion")
+
 ## Written by
 
 Doris Hung, Tiana Jihyung Im, Shelli Skinner, Amy Tsai
