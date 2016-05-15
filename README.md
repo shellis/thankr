@@ -1,17 +1,17 @@
-# thankr
+# Thankr
 
 ## What is Thankr?
 
-Thankr is a smart webapp to help you become happier! It lets you add simple moments that you're grateful for. From that, it uses a text mining framework called TextBlob based on common natural language processing (NLP) to analyze your entries by looking things like the nouns used, sentiments and word freqency. By auto classifying your entry under different 'categories', it identifies top categories that make you happy and gives you a smart suggestion for an activity you can try today. Thankr has potential to become smarter as you feed more entries and train the system. 
+Thankr is a smart webapp to help you become happier! It lets you add simple moments that you're thankful for. From that, it uses a text mining framework based on common natural language processing (NLP) called TextBlob to analyze your entries by looking things like the nouns used, sentiments and word freqency. It then auto classifies your entry under different 'categories', identifies top categories that make you happy and gives you a smart suggestion for an activity you can try today. Thankr has potential to become smarter as you feed more entries and train the system!
 
-We hacked this in 12 hours for the 'Powerful Women in Tech Presents: Hack for the World Hackathon' at the Facebook Headquarters. :)
+We hacked Thankr in 12 hours for the 'Powerful Women in Tech Presents: Hack for the World Hackathon' at the Facebook Headquarters. :)
 
 ## Features
 
 - logging in/logging out
 - Adding moment entries (date, title, simple text and rating)
-- Viewing all moments
 - Auto categorizing your entry through text processing
+- Viewing all moments
 - Smart suggestion based on your top category
 
 ## Screenshots
@@ -34,11 +34,11 @@ We hacked this in 12 hours for the 'Powerful Women in Tech Presents: Hack for th
 
 ## Future improvements
 - Improving the UI
-- Social intergration (Facebook, Twitter, etc)
 - Feed more training texts for auto categorizing
-- Allow new entries to be fed into training
+- Incorporating data from new entries to be fed into training
+- Social intergration (Facebook, Twitter, etc)
 - Incorporate ratings into smart suggestion
-- More diverse suggestions
+- Smarter/more diverse suggestions
 
 ## Written by
 
