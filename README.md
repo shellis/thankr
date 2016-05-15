@@ -17,15 +17,19 @@ We hacked this in 12 hours for the 'Powerful Women in Tech Presents: Hack for th
 ## Screenshots
 
 1. Home page
+
 ![Alt text](/screenshots/Home.png?raw=true "Home")
 
 2. Add a simple moment about your code finally compiling. (hooray)
+
 ![Alt text](/screenshots/AddMoment.png?raw=true "Add Moment")
 
 3. Thankr will add and auto categorize your new moment! Notice how Thankr recognized it as a 'work' related moment.
+
 ![Alt text](/screenshots/AllMoments.png?raw=true "All Moments")
 
 4. Get a daily random suggestion on what will make you happy! Thankr notices that food seems to be something that makes you the happiest and gives you a related suggestion. 
+
 ![Alt text](/screenshots/SmartSuggestion.png?raw=true "Smart Suggestion")
 
 ## Future improvements
