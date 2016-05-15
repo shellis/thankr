@@ -5,10 +5,11 @@
 <html>
   <head>
       <title>Thankr</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   </head>
   <body>
     <h1>Add a moment that made your day!</h1>
-    <form id="moment_form" method="post" action="/moments/add/" enctype="multipart/form-data">
+    <form id="moment_form" method="post" action="/moments/add/" enctype="multipart/form-data" template_pack='rest_framework/vertical'>
     {% csrf_token %}
     {% render_form serializer %}
     <input type="submit" value="Save">
