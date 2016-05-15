@@ -8,6 +8,9 @@ from django.http import HttpResponseRedirect
 from thankr.moments.resources.serializers import MomentSerializer
 from thankr.moments.models import Moment
 
+from django.db.models import Max
+from django.db.models import Count
+
 class MomentDetail(APIView):
 	permission_classes = (permissions.IsAuthenticated,)
 	renderer_classes = [TemplateHTMLRenderer]
@@ -33,3 +36,20 @@ class MomentList(APIView):
 		moments = Moment.objects.filter(user_id=request.user.id)
 		moments_serializer = MomentSerializer(moments, many=True)
 		return Response({'moments': moments_serializer.data})
+
+
+class Suggestion(APIView):
+	permission_classes = (permissions.IsAuthenticated,)
+	renderer_classes = [TemplateHTMLRenderer]
+	template_name = 'suggestion.html'
+
+	def get(self, request):
+		maxTuple = Moment.objects.filter(user_id=request.user.id).values("suggested_category").annotate(total=Count("suggested_category")).order_by("total")[0]
+		maxSuggestedCategory = maxTuple["suggested_category"]
+		return Response({'topCategory': maxSuggestedCategory})	
+
+
+
+
+
+

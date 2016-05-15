@@ -1,3 +1,4 @@
 ## requirements for thankr##
 django
 djangorestframework
+textblob
