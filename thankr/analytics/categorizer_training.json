@@ -5,6 +5,7 @@
     {"text": "I feel very good about these beers.", "label": "food"},
     {"text": "I love this restaurant", "label": "food"},
     {"text": "I ate a burger", "label": "food"},
+    {"text": "I ate a lot of ramen", "label": "food"},
     {"text": "This is an amazing place!", "label": "travel"},
     {"text": "What an awesome view", "label": "travel"},
     {"text": "I went to the airport.", "label": "travel"},
