@@ -15,14 +15,15 @@ Thankr is a smart webapp to help you become happier! It lets you add simple mome
 ## Screenshots
 
 1. Home page
-![Alt text](/screenshots/Home.png?raw=true "Home" =250x)
+![Alt text](/screenshots/Home.png?raw=true "Home")
 
-2. Add a simple moment
+2. Add a simple moment about your code finally compiling.
 ![Alt text](/screenshots/AddMoment.png?raw=true "Add Moment")
 
-3. Thankr will auto categorize your moment!
+3. Thankr will auto categorize your moment! Notice how Thankr recognized it as a 'work' related moment
+![Alt text](/screenshots/AllMoments.png?raw=true "All Moments")
 
-4. Get a suggestion on what will make you happy! It knows food makes you happy.
+4. Get a suggestion on what will make you happy! Thankr notices that food seems to be the category that makes you the happiest and gives you a related suggestion. 
 ![Alt text](/screenshots/Suggestion.png?raw=true "Suggestion")
 
 ## Written by
