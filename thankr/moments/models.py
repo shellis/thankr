@@ -21,4 +21,4 @@ class Category(models.Model):
     class Meta:
         db_table = 'categories'
     id = models.AutoField(primary_key=True)
-    name = models.CharField(max_length=1024, null=False)
+    name = models.CharField(max_length=1024, null=False, unique=True)

@@ -1,13 +1,20 @@
-<ul class="nav nav-list">
+<ul class="uk-subnav uk-subnav-line">
     {% if user.is_authenticated %}
-    <a href="/moments/">View all moments</a> 
-    |
-    <a href="/moments/add/">Add moment</a>
-    |
-	<a href="/logout/">Logout</a><br />
+    <li>
+    	<a href="/moments/">View all moments</a>
+	</li>
+    <li>
+    	<a href="/moments/add/">Add moment</a>
+	</li>
+	<li>
+    	<a href="/logout/">Logout</a><br />
+	</li>
 	{% else %}
-	<a href="/register/">Register Here</a> 
-	|
-	<a href="/login/">Login</a>
+	<li>
+    	<a href="/register/">Register Here</a> 
+	</li>
+	<li>
+    	<a href="/login/">Login</a>
+	</li>
 	{% endif %}
 </ul>

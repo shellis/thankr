@@ -4,9 +4,11 @@ from rest_framework.views import APIView
 from rest_framework import permissions, status
 from rest_framework.renderers import TemplateHTMLRenderer
 from django.http import HttpResponseRedirect
+from django.core.exceptions import ObjectDoesNotExist
 
 from thankr.moments.resources.serializers import MomentSerializer
-from thankr.moments.models import Moment
+from thankr.moments.models import Moment, Category
+from thankr.analytics.categorizer import categorize
 
 from django.db.models import Max
 from django.db.models import Count
@@ -24,7 +26,14 @@ class MomentDetail(APIView):
 		serializer = MomentSerializer(data=request.data)
 		if not serializer.is_valid():
 			return Response({'serializer': serializer})
-		serializer.save(user_id=request.user.id)
+		suggested_category = categorize(serializer.validated_data['text'])
+		try:
+			cat_db = Category.objects.get(name__exact=suggested_category)
+			print("Category most matched:", cat_db.name)
+			suggested_category_id = cat_db.id
+		except ObjectDoesNotExist:
+			suggested_category_id = None
+		serializer.save(user_id=request.user.id, suggested_category_id=suggested_category_id)
 		return HttpResponseRedirect('/moments/')
 
 class MomentList(APIView):

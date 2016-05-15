@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'thankr.moments',
+    'thankr.analytics',
     'rest_framework',
 ]
 

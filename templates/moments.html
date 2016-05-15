@@ -1,30 +1,29 @@
 {% extends "base.html" %}
+{% load staticfiles %}
+{% block styles %}
+ <link rel="stylesheet" type="text/css" href="{% static 'moments.css' %}">
+{% endblock styles %} 
 {% block content %}
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Thankr</title>
-    </head>
-    <body>
-    	<table>
-    		<tr>
-    			<th>Date</th>
-    			<th>Title</th>
-    			<th>Text</th>
-    		</tr>
-    		{% if moments %}
-		    	{% for moment in moments %}
-		    		<tr>  
-		    			<td>{{ moment.date }} </td>
-		    			<td>{{ moment.title }} </td>
-		    			<td>{{ moment.text }} </td>
-		    		</tr>
-		    	{% endfor %}
-	    	{% else %}
-	    	<tr><td> Sorry no moments!</td></tr>
-	    	{% endif %}
-    	</table>
-    </body>
+    <h1>My Moments!</h1>
+        <div class='moments-table'>
+        	<table class='uk-table uk-table-hover'>
+        		<tr>
+        			<th>Date</th>
+        			<th>Title</th>
+        			<th>Text</th>
+        		</tr>
+        		{% if moments %}
+    		    	{% for moment in moments %}
+    		    		<tr>  
+    		    			<td>{{ moment.date }} </td>
+    		    			<td>{{ moment.title }} </td>
+    		    			<td class='moment-text'>{{ moment.text }} </td>
+    		    		</tr>
+    		    	{% endfor %}
+    	    	{% else %}
+    	    	<tr><td> Sorry no moments!</td></tr>
+    	    	{% endif %}
+        	</table>
+        </div>
 
-</html>
 {% endblock %}
