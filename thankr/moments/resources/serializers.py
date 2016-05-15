@@ -5,4 +5,4 @@ class MomentSerializer(serializers.ModelSerializer):
     class Meta:
         model = Moment
         fields = ('id', 'date', 'title', 'text', 'category', 'rating')
-        read_only_fields = ('id',)
+        read_only_fields = ('id', 'suggested_category')

@@ -13,7 +13,8 @@ class Moment(TimeStampedModel):
     user = models.ForeignKey(User, db_column="user_id", null=False)
     title = models.CharField(max_length=1024, null=False)
     text = models.TextField(null=False)
-    category = models.ForeignKey('Category', max_length=1024, null=True, blank=True)
+    category = models.ForeignKey('Category', related_name='user_category', max_length=1024, null=True, blank=True)
+    suggested_category = models.ForeignKey('Category', related_name='suggested_category',max_length=1024, null=True, blank=True)
     rating = models.IntegerField(null=True, blank=True)
 
 class Category(models.Model):
