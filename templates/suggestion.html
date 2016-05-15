@@ -5,22 +5,24 @@
 {% endblock styles %} 
 {% block content %}
 <h2> Smart suggestion of the day for {{ user.username }}:</h2>
+<h3>
 Why don't you try 
-
+<b>
 	{% if topCategory == 'food' %}
-		eating more free delicious Facebook food
+		ordering a pepperoni pizza from Dominios
 	{% elif topCategory == 'travel' %}
 		planning your weekend trip
 	{% elif topCategory == 'work' %}
 		working overtime
 	{% elif topCategory == 'people' %}
-		attending more hackathon and meeting awesome people
+		attending a local meetup
 	{% else %}
 		excercising for an hour
 	{% endif %}
+</b>
+today? We think it'll make you happy.</h3>
+</br></br>
 
-today? We think it'll make you happy.</br></br>
-
-(Debug: your current top category is {{ topCategory}})
+(Suggestion based on your previous entries. Your current top category is : {{ topCategory}})
 
 {% endblock %}
