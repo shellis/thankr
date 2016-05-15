@@ -19,3 +19,9 @@ h1 {
 .content-wrapper {
 	margin-top: 50px;
 }
+
+button {
+	border: none;
+	background: #fff;
+	color: #00E4BA;
+}

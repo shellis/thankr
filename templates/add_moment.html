@@ -12,7 +12,7 @@
     <form id="moment_form" method="post" action="/moments/add/" enctype="multipart/form-data" template_pack='rest_framework/vertical'>
     {% csrf_token %}
     {% render_form serializer %}
-    <input type="submit" value="Save">
+    <button type="submit">Save</button>
     </form>
   </body>
 </html>
