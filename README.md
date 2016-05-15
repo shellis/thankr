@@ -14,7 +14,14 @@ Thankr is a smart webapp to help you become happier! It lets you add simple mome
 
 ## Screenshots
 
+1. Home page
 ![Alt text](/screenshots/Home.png?raw=true "Optional Title")
+
+2. Add a simple moment
+
+3. Thankr will auto categorize your moment!
+
+4. Get a suggestion on what will make you happy.
 
 ## Written by
 
