@@ -42,7 +42,7 @@ class MomentList(APIView):
 	template_name = 'moments.html'
 
 	def get(self, request):
-		moments = Moment.objects.filter(user_id=request.user.id)
+		moments = Moment.objects.filter(user_id=request.user.id).order_by('-date')
 		moments_serializer = MomentSerializer(moments, many=True)
 		return Response({'moments': moments_serializer.data})
 
@@ -59,11 +59,4 @@ class Suggestion(APIView):
 			maxSuggestedCategory = Category.objects.get(id=maxSuggestedCategoryId).name
 		except ObjectDoesNotExist:
 			maxSuggestedCategory = None
-		return Response({'topCategory': maxSuggestedCategory})	
-
-
-
-
-
-
-
+		return Response({'topCategory': maxSuggestedCategory})
