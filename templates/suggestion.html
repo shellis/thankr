@@ -1,5 +1,26 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block styles %}
+ <link rel="stylesheet" type="text/css" href="{% static 'moments.css' %}">
+{% endblock styles %} 
 {% block content %}
-<h2> Personal suggestion of the day for {{ user.username }}</h2>
-Why don't you try ____ today?
-    {{ topCategory }}
+<h2> Smart suggestion of the day for {{ user.username }}:</h2>
+Why don't you try more 
+
+	{% if topCategory == 'food' %}
+		food
+	{% elif topCategory == 'travel' %}
+		travelling
+	{% elif topCategory == 'work' %}
+		working
+	{% elif topCategory == 'people' %}
+		hanging out with friends
+	{% else %}
+		excercising
+	{% endif %}
+
+today? We think it'll make you happy.</br></br>
+
+(Debug: your current top category is {{ topCategory}})
+
 {% endblock %}
