@@ -53,8 +53,8 @@ class Suggestion(APIView):
 	template_name = 'suggestion.html'
 
 	def get(self, request):
-		maxTuple = Moment.objects.filter(user_id=request.user.id).values("suggested_category_id").annotate(total=Count("suggested_category_id")).order_by("-total")[0]
-		maxSuggestedCategoryId = maxTuple["suggested_category_id"]
+		maxTuple = Moment.objects.filter(user_id=request.user.id).values("category_id").annotate(total=Count("category_id")).order_by("-total")[0]
+		maxSuggestedCategoryId = maxTuple["category_id"]
 		try:
 			maxSuggestedCategory = Category.objects.get(id=maxSuggestedCategoryId).name
 		except ObjectDoesNotExist:

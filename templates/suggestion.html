@@ -5,18 +5,18 @@
 {% endblock styles %} 
 {% block content %}
 <h2> Smart suggestion of the day for {{ user.username }}:</h2>
-Why don't you try more 
+Why don't you try 
 
 	{% if topCategory == 'food' %}
-		food
+		eating chinese food
 	{% elif topCategory == 'travel' %}
-		travelling
+		planning your weekend trip
 	{% elif topCategory == 'work' %}
-		working
+		working overtime
 	{% elif topCategory == 'people' %}
-		hanging out with friends
+		hanging out with friend Max
 	{% else %}
-		excercising
+		excercising for an hour
 	{% endif %}
 
 today? We think it'll make you happy.</br></br>
