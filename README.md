@@ -26,7 +26,7 @@ We hacked this in 12 hours for the 'Powerful Women in Tech Presents: Hack for th
 ![Alt text](/screenshots/AllMoments.png?raw=true "All Moments")
 
 4. Get a daily random suggestion on what will make you happy! Thankr notices that food seems to be something that makes you the happiest and gives you a related suggestion. 
-![Alt text](/screenshots/Suggestion.png?raw=true "Suggestion")
+![Alt text](/screenshots/Suggestion.png?raw=true "SmartSuggestion")
 
 ## Future improvements
 blah
