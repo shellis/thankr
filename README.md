@@ -12,9 +12,7 @@ Thankr is a smart webapp to help you become happier! It lets you add simple mome
 - Auto categorizing your entry by text mining
 - Smart suggestion based on your top category
 
-Home.png
-
-![alt tag](https://raw.githubusercontent.com/imtiana/thankr/screenshots/Home.png)
+![Alt text](/screenshots/Home.png?raw=true "Optional Title")
 
 ## Written by
 
